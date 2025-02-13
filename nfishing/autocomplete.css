@@ -1,0 +1,124 @@
+/*------------------ns-autocomplete---------------------*/
+
+.ns-autocomplete {
+    left: 0;
+    right: 0;
+    top: 108px;
+    z-index: var(--ns-z-index-autocomplete);
+    width: 100%;
+    box-shadow: 0 10px 10px -5px #cccccc;
+}
+
+.ns-history {
+    top: 69px;
+}
+
+.ns-autocomplete > .ns-w-100 {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.ns-autocomplete-keywords {
+    background-color: #114232;
+    color: #fff;
+}
+
+.ns-autocomplete-submit button,
+.ns-autocomplete-submit button:hover {
+    border-radius: 0;
+}
+
+.ns-autocomplete-submit button:hover {
+    background: var(--ns-color-primary-light);
+}
+
+.emz-ns-autocomplete-product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+}
+
+.emz-ns-autocomplete-product-list img {
+    aspect-ratio: 1;
+}
+
+.ns-autocomplete-products {
+    padding: 0 6px;
+}
+
+.ns-autocomplete-element {
+    position: relative;
+}
+
+.ns-autocomplete-element > span {
+    display: block;
+    padding: 8px 16px;
+}
+
+.ns-autocomplete-product-info .ns-sale-price {
+    color: var(--bs-danger);
+}
+
+.ns-autocomplete-keywords-element {
+    overflow-x: auto;
+}
+
+.ns-autocomplete-keywords-element::-webkit-scrollbar {
+    display: none;
+}
+
+.ns-autocomplete-keywords .ns-autocomplete-element {
+    min-width: fit-content;
+}
+
+/*----------------ns-keyword-in-category----------------*/
+
+.ns-keyword-in-category {
+    color: var(--ns-color-grey);
+    font-size: var(--ns-font-size-3);
+}
+
+.ns-keyword-in-category > span {
+    font-weight: var(--ns-weight-bold);
+}
+
+/*------------------------------------------------------*/
+
+@media (min-width: 480px) {
+    .emz-ns-autocomplete-product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .ns-autocomplete {
+        top: 216px;
+    }
+
+    .ns-history {
+        top: 59px;
+    }
+    
+    .ns-autocomplete.ns-show-keywords {
+        background: linear-gradient(90deg,#114232 35%,var(--ns-color-white) 35%);
+    }
+
+    .ns-autocomplete-products {
+        padding-left: 48px;
+    }
+}
+
+@media (min-width: 991px) {
+    .ns-autocomplete:not(.ns-history) {
+        top: 180px;
+    }
+
+    .ns-history {
+        top: 70px;
+    }
+
+    .emz-ns-autocomplete-product-list {
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 48px;
+    }
+}
