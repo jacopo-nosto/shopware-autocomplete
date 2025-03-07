@@ -5,16 +5,7 @@
 
 
 
-
-## Additional Resources
-
-Please reach out to the Nosto support team in case you have any questions that aren't answered within the documentation:
-
-* [Implementing Autocomplete](https://docs.nosto.com/techdocs/implementing-nosto/implement-search/implement-search-using-code-editor/implementing-autocomplete)
-* [Details for Search Configuration](https://docs.nosto.com/techdocs/implementing-nosto/implement-search/implement-search-using-code-editor/implementing-search-page)
-* [Full `Config` Reference](https://nosto.github.io/search-templates/library/interfaces/Config.html)
-
-### Before you start: Set Currency Format
+## Before you start: Set Currency Format
 1. Login to your Nosto account
 2. Click the `Gear` icon in the top right of your screen and select `Account Settings`.
 3. On the left side, click `Currency settings`, then go to `Price Formats` and click `Edit` for your main currency (e.g. `EUR`)
@@ -28,7 +19,6 @@ Please reach out to the Nosto support team in case you have any questions that a
 ## Required Template Adjustments in the Nosto Code Editor
 
 Login to your Nosto account, go to `Product Experience Cloud` -> `Search` -> `Templates` and click `Open code editor`.
-
 
 
 ### CSS Changes
@@ -60,3 +50,13 @@ In `index.js` go to the `init` call:
 4. Set the `query` in `serpUrlpMapping` to `"search"` and comment/remove the `products.xxx` entries
 5. Remove the comment for `serpPath: '/search'` and `serpPathRedirect: true`
    1. If you run Shopware in a subdirectory, make sure to adjust the path, e.g.: `serpPath: '/shop/search'`
+
+
+
+## Additional Resources
+
+Please reach out to the Nosto support team in case you have any questions that aren't answered within the documentation:
+
+* [Implementing Autocomplete](https://docs.nosto.com/techdocs/implementing-nosto/implement-search/implement-search-using-code-editor/implementing-autocomplete)
+* [Details for Search Configuration](https://docs.nosto.com/techdocs/implementing-nosto/implement-search/implement-search-using-code-editor/implementing-search-page)
+* [Full `Config` Reference](https://nosto.github.io/search-templates/library/interfaces/Config.html)
